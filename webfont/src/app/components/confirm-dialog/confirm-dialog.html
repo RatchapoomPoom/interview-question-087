@@ -1,0 +1,9 @@
+<div class="overlay" *ngIf="visible">
+  <div class="dialog-box">
+    <p>ต้องการลบข้อมูล รหัสสินค้า {{ productCode }} หรือไม่ ?</p>
+    <div class="actions">
+      <button class="btn-confirm" (click)="onConfirm()">ตกลง</button>
+      <button class="btn-cancel" (click)="onCancel()">ยกเลิก</button>
+    </div>
+  </div>
+</div>

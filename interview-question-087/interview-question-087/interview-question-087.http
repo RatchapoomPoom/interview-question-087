@@ -1,6 +1,0 @@
-@interview_question_087_HostAddress = http://localhost:5117
-
-GET {{interview_question_087_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###

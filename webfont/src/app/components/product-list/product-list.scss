@@ -1,0 +1,65 @@
+.container {
+  max-width: 480px;
+  margin: 24px auto;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+.toolbar {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.toolbar input {
+  flex: 1;
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.btn-add {
+  background: #1e90ff;
+  color: #fff;
+  border: none;
+  padding: 6px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.error {
+  color: #e74c3c;
+  font-size: 13px;
+}
+
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.product-table th {
+  background: #2ecc71;
+  color: #fff;
+  padding: 8px;
+  font-size: 13px;
+}
+
+.product-table td {
+  padding: 6px 8px;
+  border-bottom: 1px solid #eee;
+  font-size: 13px;
+  text-align: center;
+}
+
+.btn-delete {
+  background: #e74c3c;
+  color: #fff;
+  border: none;
+  padding: 4px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.empty {
+  color: #999;
+  padding: 16px;
+}

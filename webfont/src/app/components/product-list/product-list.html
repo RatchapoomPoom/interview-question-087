@@ -1,0 +1,46 @@
+<div class="container">
+  <div class="toolbar">
+<input
+      type="text"
+      placeholder="XXXX-XXXX-XXXX-XXXX"
+      maxlength="19"
+      [ngModel]="newProductCode"
+      (ngModelChange)="onCodeInput($event)"
+      (keyup.enter)="onAdd()"
+    />
+    <button class="btn-add" (click)="onAdd()">ADD</button>
+  </div>
+
+  <p class="error" *ngIf="errorMessage">{{ errorMessage }}</p>
+
+  <table class="product-table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>รหัสสินค้า [16 หลัก]</th>
+        <th>บาร์โค้ดสินค้า</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let p of products">
+        <td>{{ p.id }}</td>
+        <td>{{ p.productCode }}</td>
+        <td><svg [id]="'barcode-' + p.id"></svg></td>
+        <td>
+          <button class="btn-delete" (click)="onDeleteClick(p)">ลบ</button>
+        </td>
+      </tr>
+      <tr *ngIf="products.length === 0">
+        <td colspan="4" class="empty">ยังไม่มีข้อมูล</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<app-confirm-dialog
+  [visible]="showConfirm"
+  [productCode]="productToDelete?.productCode ?? ''"
+  (confirmed)="onConfirmDelete()"
+  (cancelled)="onCancelDelete()"
+></app-confirm-dialog>
