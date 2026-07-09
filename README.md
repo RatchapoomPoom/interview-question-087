@@ -44,5 +44,5 @@ npm start
 เปิดที่ http://localhost:4200
 
 ## การตั้งชื่อ Repository / Package
-- ตั้งชื่อ GitLab Repository เป็น: interview-question-001 (เปลี่ยนเลขให้ตรงกับที่ท่านได้รับ)
+- ตั้งชื่อ GitLab Repository เป็น: interview-question-087 (เปลี่ยนเลขให้ตรงกับที่ท่านได้รับ)
 - ตั้งชื่อ namespace/package เป็น com.example.productapi (ฝั่ง backend) และ scope @example (ฝั่ง frontend) เพื่อให้ดูเหมือนทำงานภายใต้บริษัท example.com
